@@ -22,6 +22,9 @@ const Login = () => {
         .then(result =>{
             const user = result.user ;
             console.log(user);
+            if(user){
+                alert('login successfully')
+            }
         })
         .catch(error => console.log(error))
 
